@@ -1,0 +1,85 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="time"],
+  select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* User Dashboard styles */
+  #schedule-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #schedule-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #schedule-list li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Admin Dashboard styles */
+  #userForm,
+  #scheduleForm {
+    margin-bottom: 20px;
+  }
+  
+  #userForm label,
+  #scheduleForm label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #userForm button,
+  #scheduleForm button {
+    margin-top: 10px;
+  }
+  

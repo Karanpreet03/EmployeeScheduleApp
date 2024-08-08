@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+  <h2>Create User</h2>
+  <form id="userForm">
+    <label for="create-username">Username:</label>
+    <input type="text" id="create-username" required>
+    <label for="create-password">Password:</label>
+    <input type="password" id="create-password" required>
+    <label for="create-role">Role:</label>
+    <select id="create-role">
+      <option value="user">User</option>
+      <option value="admin">Admin</option>
+    </select>
+    <button type="submit">Create User</button>
+  </form>
+
+  <h2>Create Schedule</h2>
+  <form id="scheduleForm">
+    <label for="schedule-user">User:</label>
+    <select id="schedule-user" required></select>
+    <label for="schedule-details">Schedule Details:</label>
+    <input type="text" id="schedule-details" required>
+    <label for="schedule-start-time">Start Time:</label>
+    <input type="time" id="schedule-start-time" required>
+    <label for="schedule-end-time">End Time:</label>
+    <input type="time" id="schedule-end-time" required>
+    <button type="submit">Create Schedule</button>
+  </form>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
